@@ -10,9 +10,9 @@
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/root";
 
-.logo{
-    margin: 0;
-};
+#fondo-cafe {
+    background-image: url("../img/fondo-cafe.jpg");
+}
 
 $font-family-sans-serif: "ivyepic-variable", sans-serif;
 $font-family-monospace: "ivyepic-variable", monospace;
@@ -64,5 +64,27 @@ $font-weight-base: 000;
     }
   }
   
+  .text-brown{
+    color: #360808;
+  }
+
+  .text-brown-light{
+    color: #F2B366;
+  }
+
+  .text-light-coffee{
+    color: #f7f3f0;
+  
+}
+
+  .bg-light-coffee{
+    background-color: #f7f3f0;
+
+  }
+
+  .bg-coffee{
+    background-color: #360808;
+  
+  }
 
 @import "../node_modules/bootstrap/scss/bootstrap";

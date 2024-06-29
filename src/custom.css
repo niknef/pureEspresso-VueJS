@@ -176,8 +176,8 @@
   --bs-form-invalid-border-color: #ea868f;
 }
 
-.logo {
-  margin: 0;
+#fondo-cafe {
+  background-image: url("../img/fondo-cafe.jpg");
 }
 
 .container {
@@ -226,6 +226,26 @@
     flex: 1;
   }
 }
+.text-brown {
+  color: #360808;
+}
+
+.text-brown-light {
+  color: #F2B366;
+}
+
+.text-light-coffee {
+  color: #f7f3f0;
+}
+
+.bg-light-coffee {
+  background-color: #f7f3f0;
+}
+
+.bg-coffee {
+  background-color: #360808;
+}
+
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
