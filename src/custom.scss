@@ -19,6 +19,18 @@ $font-family-monospace: "ivyepic-variable", monospace;
 
 $font-weight-base: 000;
 
+.drop_shadow{
+  filter: drop-shadow(0 0 25px rgba(230, 176, 77, 0.534));
+}
+
+.noVisible{
+  display: none;
+
+}
+
+.visible{
+  display: block;
+}
 
 .container {
     max-width: 960px;
