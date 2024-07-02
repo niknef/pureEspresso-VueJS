@@ -13,15 +13,20 @@
     
 </head>
 <body class="bg-dark">
-    <div class="app">
+    <div class="app" v-cloak>
       <navbar-component @toggle-modal="toggleModal"></navbar-component>
-      <banner-component @toggle-modal="toggleModal"></banner-component>
-      <modal-component :modalvisible="modalvisible" @close-modal="closeModal" @form-submitted="handleFormSubmission"></modal-component>
-      <packs-component :packs="packs"></packs-component>
-      <divider-component></divider-component>
-      <nosotros-component></nosotros-component>
-      <divider-component></divider-component>
-      <products-component :products="products"></products-component>
+      <main>
+          <banner-component @toggle-modal="toggleModal"></banner-component>
+          <modal-component :modalvisible="modalvisible" @close-modal="closeModal" @form-submitted="handleFormSubmission"></modal-component>
+          <modal-gracias v-if="completed" :usuarios="usuarios" :completed="completed" :alerta="alerta" @close-modal="closeModal"></modal-gracias>
+          <divider-component></divider-component>
+          <packs-component :packs="packs"></packs-component>
+          <divider-component></divider-component>
+          <nosotros-component></nosotros-component>
+          <divider-component></divider-component>
+          <products-component :products="products"></products-component>
+          <coffees-component v-if="preferenciaseleccionada" :coffees="filteredCoffees"></coffees-component>
+      </main>
       <footer-component></footer-component>
     </div>
   <script src="./scripts/app.js"></script>
